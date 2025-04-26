@@ -11,7 +11,7 @@ mkdir -p /opt/telegram-telegraph-bot
 cd /opt/telegram-telegraph-bot
 
 # Clone the repository
-git clone https://github.com/yourusername/telegram-telegraph-bot.git .
+git clone https://github.com/Xssgit47/Media2TelegraphLink.git
 
 # Create and activate virtual environment
 python3 -m venv venv
