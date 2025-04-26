@@ -1,49 +1,52 @@
-# Telegram to Telegraph Media Converter Bot
+# Telegram to Telegraph Media Converter Bot v3.0
 
-A simple Telegram bot that converts media files to Telegraph links.
+![Release](https://img.shields.io/badge/Release-v3.0-red)
+![License](https://img.shields.io/badge/License-MIT-gray)
+
+## Supported Operating Systems
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Ubuntu%2018.04-BIONIC%20BEAVER-orange?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Ubuntu 18.04" />
+  <img src="https://img.shields.io/badge/Ubuntu%2020.04-FOCAL%20FOSSA-orange?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Ubuntu 20.04" />
+  <img src="https://img.shields.io/badge/Debian%2010-BUSTER-purple?style=for-the-badge&logo=debian&logoColor=white" alt="Debian 10" />
+  <img src="https://img.shields.io/badge/Debian%2011-BULLSEYE-purple?style=for-the-badge&logo=debian&logoColor=white" alt="Debian 11" />
+</div>
 
 ## Features
 
-- Converts photos, videos, and documents to Telegraph links
-- Simple and intuitive interface
-- Real-time progress updates
-- Error handling and logging
+<div align="center">
+  <img src="https://img.shields.io/badge/PHOTO-SUPPORT-blue?style=for-the-badge" alt="Photo Support" />
+  <img src="https://img.shields.io/badge/VIDEO-SUPPORT-blue?style=for-the-badge" alt="Video Support" />
+  <img src="https://img.shields.io/badge/DOCUMENT-SUPPORT-blue?style=for-the-badge" alt="Document Support" />
+</div>
 
-## Setup
+## Requirements
 
-1. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+- Python 3.8 or higher
+- Telegram Bot Token (from [@BotFather](https://t.me/BotFather))
+- Telegraph Access Token
 
-2. Configure environment variables:
-   ```bash
-   cp .env.example .env
-   ```
-   Edit `.env` and add your tokens:
-   - Get Telegram Bot Token from [@BotFather](https://t.me/BotFather)
-   - Create Telegraph token:
-     ```python
-     from telegraph import Telegraph
-     telegraph = Telegraph()
-     telegraph.create_account(short_name='YourBot')
-     print(f"Access token: {telegraph.get_access_token()}")
-     ```
+## Quick Installation
 
-3. Start the bot:
-   ```bash
-   python main.py
-   ```
+```bash
+# Update system packages
+apt update && apt upgrade -y
 
-## Usage
+# Install required packages
+apt install -y python3 python3-pip python3-venv git supervisor
 
-1. Send any media to the bot
-2. Wait for processing
-3. Receive Telegraph link
-4. Share the link
+# Clone repository
+git clone https://github.com/yourusername/telegram-telegraph-bot.git
+cd telegram-telegraph-bot
 
-## Commands
+# Install dependencies
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 
-- `/start` - Start the bot
-- `/help` - Show help
-- `/about` - About info
+# Configure environment
+cp .env.example .env
+# Edit .env and add your tokens
+```
+
+##
